@@ -1,0 +1,57 @@
+
+*{
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Space Mono', 'Inter', 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#app-title{
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  text-shadow: 0 3px 3px rgb(0 0 0 / 40%), 0 8px 13px rgb(0 0 0 / 10%), 0 13px 18px rgb(0 0 0 / 40%);
+  margin: 0;
+  padding: 3rem 0;
+  background: gray;
+  color: #eff5ff;
+  text-transform: uppercase;
+}
+
+.card{
+    border: 3px solid black;
+    min-width: 20rem;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 700px){
+.content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+  width:100%;
+}
+}
+
+
