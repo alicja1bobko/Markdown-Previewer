@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { marked } from "marked";
 import Prism from "prismjs";
+import PropTypes from "prop-types";
 
 const Preview = ({ markdown }) => {
   marked.setOptions({
@@ -21,6 +22,10 @@ const Preview = ({ markdown }) => {
   return (
     <div id="preview" dangerouslySetInnerHTML={{ __html: parsedText }}></div>
   );
+};
+
+Preview.propTypes = {
+  markdown: PropTypes.string.isRequired,
 };
 
 export default Preview;
