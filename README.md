@@ -3,7 +3,7 @@
 This is the 2nd Project for [FreeCodeCamp's Front End Development Libraries Projects](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects/build-a-markdown-previewer). <br>
 It's a lightweight markup language with plain text formatting syntax.
 
-## Tech & API
+## Tech
 
 🚀 React.js <br>
 🚀 Bootstrap <br>
