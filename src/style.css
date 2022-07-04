@@ -18,11 +18,11 @@ code {
 
 #app-title{
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 3px;
   text-shadow: 0 3px 3px rgb(0 0 0 / 40%), 0 8px 13px rgb(0 0 0 / 10%), 0 13px 18px rgb(0 0 0 / 40%);
   margin: 0;
-  padding: 3rem 0;
+  padding: 2rem 0;
   background: gray;
   color: #eff5ff;
   text-transform: uppercase;
@@ -32,7 +32,7 @@ code {
     border: 3px solid black;
     min-width: 20rem;
     border-radius: 5px;
-    margin: 1rem;
+    margin:0.5rem;
 }
 
 .content{
@@ -51,7 +51,95 @@ code {
 
 .card{
   width:100%;
+   
 }
 }
+
+#editor, #preview{
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+  resize: none;
+  height: 65vh;
+  padding: 1rem;
+
+}
+
+#editor{
+  font-size: 0.85em;
+}
+
+textarea{
+  border: none;
+  outline:none;
+}
+
+
+#preview{
+  overflow-wrap: break-word;
+  text-align: left;
+  white-space: pre;
+}
+
+#preview h1, #preview h2 {
+ border-bottom: 1px solid #ccc;
+}
+
+#preview h1{
+  font-size: 2em;
+}
+
+#preview h2{
+font-size: 1.5em;
+}
+
+#preview h3{
+font-size: 1em;
+font-weight: bold;
+}
+
+#preview code, #preview code > span {
+  background-color: lightgrey;
+}
+
+pre {
+   background-color: lightgrey;
+}
+
+#preview img{
+  display: block;
+  width: 100%;
+}
+
+#preview blockquote{
+    border-left: 3px solid rgb(75, 73, 73);
+    color: rgb(75, 73, 73);
+    padding-left: 5px;
+    margin-left: 25px;
+    margin-bottom: 0;
+    white-space: normal;
+}
+
+#preview p{
+  margin:0;
+  padding: 0;
+  white-space: normal;
+}
+
+
+#preview ul, #preview ol{
+  white-space: normal;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+th {background: lightgray}
+tr:nth-child(even) {background: lightgray}
+tr:nth-child(odd) {background: #FFF}
+
+
+
 
 
